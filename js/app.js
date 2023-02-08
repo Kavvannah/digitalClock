@@ -7,6 +7,14 @@ const tick = () => {
     const m = now.getMinutes();
     const s = now.getSeconds();
 
+    const html = `
+        <span>${h}</span>
+        <span>${m}</span>
+        <span>${s}</span>
+        `;
+
+    // inject html
+    clock.innerHtml = html;
 };
 
 setInterval(tick, 1000); //1 sec
