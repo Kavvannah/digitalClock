@@ -14,7 +14,7 @@ const tick = () => {
         `;
 
     // inject html
-    clock.innerHtml = html;
+    clock.innerHTML = html;
 };
 
 setInterval(tick, 1000); //1 sec
